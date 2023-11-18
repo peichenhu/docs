@@ -1,0 +1,16 @@
+{"datetime":"2023-10-27T08:47:22.171Z","level":"info","message":"visit /","user":"pch1024"}
+{"datetime":"2023-10-27T08:47:57.998Z","level":"info","message":"visit /","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:08.091Z","level":"info","message":"visit /max-age","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:19.724Z","level":"info","message":"visit /max-age","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:22.658Z","level":"info","message":"visit /if-modified-since","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:22.659Z","level":"info","message":"前端协商缓存无效, 返回 200","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:48.331Z","level":"info","message":"visit /if-modified-since","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:48.331Z","level":"info","message":"前端协商缓存 oldMtime 与当前 mtime 一致, 返回 304","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:51.138Z","level":"info","message":"visit /if-modified-since","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:51.138Z","level":"info","message":"前端协商缓存 oldMtime 与当前 mtime 一致, 返回 304","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:55.919Z","level":"info","message":"visit /if-none-match","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:55.920Z","level":"info","message":"前端协商缓存无效, 返回 200","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:58.600Z","level":"info","message":"visit /if-none-match","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:58.601Z","level":"info","message":"前端协商缓存 oldMtime 与当前 mtime 一致, 返回 304","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:59.693Z","level":"info","message":"visit /if-none-match","user":"pch1024"}
+{"datetime":"2023-10-27T08:48:59.694Z","level":"info","message":"前端协商缓存 oldMtime 与当前 mtime 一致, 返回 304","user":"pch1024"}

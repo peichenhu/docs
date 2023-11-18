@@ -13,8 +13,16 @@
           "link": "/10-js/15-函数"
         },
         {
+          "text": "原型",
+          "link": "/10-js/18-原型"
+        },
+        {
           "text": "集合对象",
           "link": "/10-js/20-集合对象"
+        },
+        {
+          "text": "面向对象",
+          "link": "/10-js/24-面向对象"
         },
         {
           "text": "迭代",
@@ -27,6 +35,10 @@
         {
           "text": "克隆",
           "link": "/10-js/50-克隆"
+        },
+        {
+          "text": "设计模式",
+          "link": "/10-js/60-设计模式"
         },
         {
           "text": "正则",
@@ -77,8 +89,8 @@
           "link": "/20-browser/50-前端性能"
         },
         {
-          "text": "其他",
-          "link": "/20-browser/99-其他"
+          "text": "综合",
+          "link": "/20-browser/99-综合"
         }
       ],
       "collapsed": true
@@ -123,6 +135,68 @@
         {
           "text": "Vue考点",
           "link": "/35-vue/10-Vue考点"
+        },
+        {
+          "text": "Vue-Keep-Alive的原理",
+          "link": "/35-vue/Vue-Keep-Alive的原理"
+        },
+        {
+          "text": "Vue-Key的作用",
+          "link": "/35-vue/Vue-Key的作用"
+        },
+        {
+          "text": "Vue-Patch-Children",
+          "link": "/35-vue/Vue-Patch-Children"
+        },
+        {
+          "text": "Vue-mini",
+          "link": "/35-vue/Vue-mini"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "TOOLS",
+      "items": [
+        {
+          "text": "git",
+          "link": "/38-tools/git"
+        },
+        {
+          "text": "homebrew",
+          "link": "/38-tools/homebrew"
+        },
+        {
+          "text": "linux",
+          "link": "/38-tools/linux"
+        },
+        {
+          "text": "nginx",
+          "link": "/38-tools/nginx"
+        },
+        {
+          "text": "pm2",
+          "link": "/38-tools/pm2"
+        },
+        {
+          "text": "shell",
+          "link": "/38-tools/shell"
+        },
+        {
+          "text": "ssh-keygen",
+          "link": "/38-tools/ssh-keygen"
+        },
+        {
+          "text": "tree",
+          "link": "/38-tools/tree"
+        },
+        {
+          "text": "vim",
+          "link": "/38-tools/vim"
+        },
+        {
+          "text": "vitepress",
+          "link": "/38-tools/vitepress"
         }
       ],
       "collapsed": true
@@ -153,48 +227,8 @@
           "link": "/40-others/Markdown语法"
         },
         {
-          "text": "git",
-          "link": "/40-others/git"
-        },
-        {
           "text": "github-actions",
           "link": "/40-others/github-actions"
-        },
-        {
-          "text": "homebrew",
-          "link": "/40-others/homebrew"
-        },
-        {
-          "text": "linux",
-          "link": "/40-others/linux"
-        },
-        {
-          "text": "nginx",
-          "link": "/40-others/nginx"
-        },
-        {
-          "text": "pm2",
-          "link": "/40-others/pm2"
-        },
-        {
-          "text": "sh",
-          "link": "/40-others/sh"
-        },
-        {
-          "text": "ssh-key",
-          "link": "/40-others/ssh-key"
-        },
-        {
-          "text": "tree",
-          "link": "/40-others/tree"
-        },
-        {
-          "text": "vim",
-          "link": "/40-others/vim"
-        },
-        {
-          "text": "vitepress",
-          "link": "/40-others/vitepress"
         },
         {
           "text": "定时任务",

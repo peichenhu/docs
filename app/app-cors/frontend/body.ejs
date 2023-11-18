@@ -1,0 +1,43 @@
+<h3>=====测试模版参数=====</h2>
+<p>name: <%= body.user.name %></p>
+<p>age: <%= body.user.age %></p>
+<p>species: <%= body.user.species %></p>
+
+<h3>=====非跨域请求=====</h2>
+
+<pre style="width: 80vw">
+执行：
+fetch("/no-cros");
+</pre>
+
+<script>
+    fetch("/no-cros");
+</script>
+
+<h3>=====跨域请求=====</h2>
+
+<pre style="width: 80vw">
+执行：
+fetch("https://cors-demo.glitch.me/", { mode: "cors" });
+
+会看到：
+request has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+</pre>
+
+<script>
+    fetch("https://cors-demo.glitch.me/", { mode: "cors" });
+</script>
+
+<pre style="width: 80vw">
+执行：
+fetch('https://cors-demo.glitch.me/allow-cors', {mode:'cors'})
+
+会看到：
+标头中添加 Access-Control-Allow-Origin: *
+请求不应被屏蔽。
+</pre>
+
+<script>
+    fetch("https://cors-demo.glitch.me/allow-cors", { mode: "cors" });
+</script>

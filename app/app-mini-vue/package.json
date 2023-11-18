@@ -1,0 +1,14 @@
+{
+  "name": "app-mini-vue",
+  "version": "1.0.0",
+  "description": "1.  编译器: 视图模板 => 渲染函数 2.  数据响应模块: 数据对象 => 响应式数据对象 3.  视图渲染:     1. RenderPhase 渲染模块 (使用) 渲染函数 (根据) 初始化数据 (生成) 虚拟 Dom     2. MountPhase 虚拟 Dom (创建) 视图 Html     3. PatchPhase 数据模型 (变化) 渲染函数 (用生) 虚拟 Dom (经过) Dom Diff （更新） 视图 Html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.3.7"
+  }
+}

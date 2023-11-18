@@ -27,11 +27,9 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果你想要部署到 https://<USERNAME>.github.io
-git push -f git@github.com:peichenhu/peichenhu.github.io.git master
-
 # 如果你想要部署到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+git push -f git@github.com:peichenhu/peichenhu.github.io.git master
 
 # 快速切换到你之前所在的目录
 cd -

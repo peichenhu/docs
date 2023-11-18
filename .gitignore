@@ -1,5 +1,8 @@
+# 所有忽略
+node_modules
+
+# 根目录忽略
 /*.log
-/node_modules
 /dist
 /src/.vitepress/cache
 /src/.vitepress/dist

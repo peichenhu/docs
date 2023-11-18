@@ -20,7 +20,7 @@ export default defineConfig({
     },
     head: [
         ["meta", { name: "theme-color", content: "#0f00ee" }],
-        ["link", { rel: "icon", href: "/blog/logo.svg" }],
+        ["link", { rel: "icon", href: "/logo.svg" }],
     ],
     themeConfig: {
         lastUpdated: true,

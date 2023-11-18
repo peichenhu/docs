@@ -1,0 +1,17 @@
+{
+  "name": "app-fe-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.14.2",
+    "koa-router": "^12.0.1",
+    "winston": "^3.11.0"
+  }
+}

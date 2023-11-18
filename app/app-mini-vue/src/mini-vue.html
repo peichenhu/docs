@@ -1,0 +1,83 @@
+<style>
+    .red {
+        color: red;
+    }
+    .blue {
+        color: blue;
+    }
+</style>
+
+<div id="app"></div>
+
+<script type="module">
+    // 渲染模块；渲染函数 hyperscript 或者 createVnode
+    import h from "./mini-vue-h.js";
+    // 渲染模块：补丁函数
+    import patch from "./mini-vue-patch.js";
+    // 响应式模块
+    import reactivity from "./mini-vue-reactivity.js";
+    // 渲染模块：挂载函数
+    import mount from "./mini-vue-mount.js";
+    const { ref, reactive, watchEffect } = reactivity;
+    // ==========================================
+    // ===> 测试代码组件
+    // ==========================================
+    const App = {
+        count: ref(0),
+        obj: reactive({
+            bool: {
+                value: false,
+            },
+        }),
+        render() {
+            const { count, obj } = this;
+            const p = () => h("p", {}, "p 元素");
+            const div = () => h("div", {}, "div元素");
+            const span = () => h("span", {}, "span元素");
+            const arr = (bool) =>
+                bool ? [p(), div(), span()] : [span(), div()];
+
+            return h(
+                "div",
+                {
+                    onClick: () => {
+                        count.value++;
+                        obj.bool.value = !obj.bool.value;
+                    },
+                },
+                [
+                    h(
+                        "div",
+                        { class: obj.bool.value ? "red" : "blue" },
+                        "当前数字: " + String(count.value)
+                    ),
+                    h("div", {}, arr(obj.bool.value)),
+                ]
+            );
+        },
+    };
+    // ==========================================
+    // ===> mini-vue 入口函数
+    // ==========================================
+    const mountApp = function (component, container) {
+        let isMounted = false;
+        let vnode;
+        watchEffect(() => {
+            if (!isMounted) {
+                vnode = component.render();
+                mount(vnode, container);
+                isMounted = true;
+                console.log("mount");
+            } else {
+                const newVnode = component.render();
+                patch(vnode, newVnode, container);
+                vnode = newVnode;
+                console.log("patch");
+            }
+        });
+    };
+    // ==========================================
+    // ===> mini-vue 调用函数
+    // ==========================================
+    mountApp(App, document.querySelector("#app"));
+</script>
