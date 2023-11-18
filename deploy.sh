@@ -36,4 +36,4 @@ git push -f git@github.com:peichenhu/peichenhu.github.io.git master
 # 快速切换到你之前所在的目录
 cd -
 
-echo "====== DEPLOY ENDED ======"
+echo "====== DEPLOY SUCCESS ======"
