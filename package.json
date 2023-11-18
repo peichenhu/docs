@@ -1,0 +1,18 @@
+{
+    "name": "docs",
+    "version": "1.0.0",
+    "description": "个人文档",
+    "scripts": {
+        "deploy": "sh deploy.sh",
+        "dev": "vitepress dev src --open",
+        "build": "vitepress build src"
+    },
+    "author": "pch1024",
+    "license": "MIT",
+    "devDependencies": {
+        "less": "4.2.0",
+        "vitepress": "1.0.0-rc.25"
+    },
+    "版本说明": "[主版本号].[次版本号].[补丁版本号]-[希腊版本号]",
+    "依赖管理": "[^]可更新次版本；[~]可更新补丁版本；[空]锁定当前版本；"
+}

@@ -1,0 +1,215 @@
+
+{
+  "menu": [
+    {
+      "text": "JS",
+      "items": [
+        {
+          "text": "数据与声明",
+          "link": "/10-js/10-数据与声明"
+        },
+        {
+          "text": "函数",
+          "link": "/10-js/15-函数"
+        },
+        {
+          "text": "集合对象",
+          "link": "/10-js/20-集合对象"
+        },
+        {
+          "text": "迭代",
+          "link": "/10-js/30-迭代"
+        },
+        {
+          "text": "反射",
+          "link": "/10-js/40-反射"
+        },
+        {
+          "text": "克隆",
+          "link": "/10-js/50-克隆"
+        },
+        {
+          "text": "正则",
+          "link": "/10-js/90-正则"
+        },
+        {
+          "text": "手写",
+          "link": "/10-js/98-手写"
+        },
+        {
+          "text": "其他",
+          "link": "/10-js/99-其他"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "CSS",
+      "items": [
+        {
+          "text": "BFC",
+          "link": "/15-css/BFC"
+        },
+        {
+          "text": "CSS",
+          "link": "/15-css/CSS"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "BROWSER",
+      "items": [
+        {
+          "text": "垃圾回收",
+          "link": "/20-browser/20-垃圾回收"
+        },
+        {
+          "text": "安全防护",
+          "link": "/20-browser/30-安全防护"
+        },
+        {
+          "text": "浏览器缓存",
+          "link": "/20-browser/40-浏览器缓存"
+        },
+        {
+          "text": "前端性能",
+          "link": "/20-browser/50-前端性能"
+        },
+        {
+          "text": "其他",
+          "link": "/20-browser/99-其他"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "LEETCODE",
+      "items": [
+        {
+          "text": "数据结构",
+          "link": "/30-leetcode/0-数据结构"
+        },
+        {
+          "text": "算法",
+          "link": "/30-leetcode/1-算法"
+        },
+        {
+          "text": "日常练习-叉树",
+          "link": "/30-leetcode/日常练习-叉树"
+        },
+        {
+          "text": "日常练习-数组",
+          "link": "/30-leetcode/日常练习-数组"
+        },
+        {
+          "text": "日常练习-矩阵",
+          "link": "/30-leetcode/日常练习-矩阵"
+        },
+        {
+          "text": "日常练习-链表",
+          "link": "/30-leetcode/日常练习-链表"
+        },
+        {
+          "text": "日常练习-高阶",
+          "link": "/30-leetcode/日常练习-高阶"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "VUE",
+      "items": [
+        {
+          "text": "Vue考点",
+          "link": "/35-vue/10-Vue考点"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "RESUME",
+      "items": [
+        {
+          "text": "luban",
+          "link": "/39-resume/luban"
+        },
+        {
+          "text": "resume",
+          "link": "/39-resume/resume"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "OTHERS",
+      "items": [
+        {
+          "text": "Emoji",
+          "link": "/40-others/Emoji"
+        },
+        {
+          "text": "Markdown语法",
+          "link": "/40-others/Markdown语法"
+        },
+        {
+          "text": "git",
+          "link": "/40-others/git"
+        },
+        {
+          "text": "github-actions",
+          "link": "/40-others/github-actions"
+        },
+        {
+          "text": "homebrew",
+          "link": "/40-others/homebrew"
+        },
+        {
+          "text": "linux",
+          "link": "/40-others/linux"
+        },
+        {
+          "text": "nginx",
+          "link": "/40-others/nginx"
+        },
+        {
+          "text": "pm2",
+          "link": "/40-others/pm2"
+        },
+        {
+          "text": "sh",
+          "link": "/40-others/sh"
+        },
+        {
+          "text": "ssh-key",
+          "link": "/40-others/ssh-key"
+        },
+        {
+          "text": "tree",
+          "link": "/40-others/tree"
+        },
+        {
+          "text": "vim",
+          "link": "/40-others/vim"
+        },
+        {
+          "text": "vitepress",
+          "link": "/40-others/vitepress"
+        },
+        {
+          "text": "定时任务",
+          "link": "/40-others/定时任务"
+        },
+        {
+          "text": "普通字画",
+          "link": "/40-others/普通字画"
+        },
+        {
+          "text": "编程字画",
+          "link": "/40-others/编程字画"
+        }
+      ],
+      "collapsed": true
+    }
+  ]
+}
