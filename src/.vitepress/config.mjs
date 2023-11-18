@@ -69,7 +69,7 @@ export default defineConfig({
         footer: {
             /* prettier-ignore */
             message: " ༼ つ/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿◕ _◕ ༽つ/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿",
-            copyright: "COPYRIGHT © 1992-PRESENT PCH1024-" + VERSION,
+            copyright: "COPYRIGHT © 1992-PRESENT PCH1024-V" + VERSION,
         },
         socialLinks: [{ icon: "github", link: "https://github.com/peichenhu" }],
     },
