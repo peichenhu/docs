@@ -59,10 +59,7 @@ export default defineConfig({
             {
                 text: "网站导航",
                 items: [
-                    { text: "内部导航", link: "/home#内部导航" },
-                    { text: "外部导航", link: "/home#外部导航" },
-                    { text: "api-examples", link: "/api-examples" },
-                    { text: "markdown-examples", link: "/markdown-examples" },
+                    { text: "HOME", link: "/home" },
                 ],
             },
         ],

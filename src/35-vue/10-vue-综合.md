@@ -1,18 +1,5 @@
 # Vue
 
-## Vue 生命周期
-
-就是一个 Vue 实例创建、挂载、更新、卸载的过程，开发者可以在对应的阶段执行业务逻辑。
-
-页面加载：beforeCreate、created、beforeMount、mounted
-
--   `加载渲染过程：` 父 beforeCreate->父 created->父 beforeMount->子 beforeCreate->子 created->子 beforeMount- >子 mounted->父 mounted
--   `子组件更新过程：` 父 beforeUpdate->子 beforeUpdate->子 updated->父 updated
--   `父组件更新过程：` 父 beforeUpdate -> 父 updated
--   `销毁过程：` 父 beforeDestroy->子 beforeDestroy->子 destroyed->父 destroyed
-
-![lifecycle](https://cn.vuejs.org/assets/lifecycle.16e4c08e.png)
-
 ## Vue2 响应式原理
 
 Vue 通过 `Object.definedProperty` 对 data 上的属性重新定义，转为 getter/setter,
