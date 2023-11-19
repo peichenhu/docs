@@ -1,4 +1,4 @@
-## mini-vue
+# vue-3-mini
 
 -   响应式模块 `ReactivityModule`
     -   依赖收集 `depend`
@@ -16,9 +16,65 @@
             - `diff-props`
             - `diff-children`
 
-## mini-vue 工作流程
+## 工作流程
 
-![mini-vue](../../dio/Vue3工作流程.png)
+![mini-vue](/vue-3-mini.svg)
+
+## 响应式模块 Ref
+
+```js
+class Ref {
+    constructor(value) {
+        this._value = value;
+        this.effectList = new Set();
+    }
+    get value() {
+        this.depend();
+        return this._value;
+    }
+    set value(value) {
+        this._value = value;
+        this.notify();
+    }
+    static activeEffect = null;
+    static watchEffect(fn) {
+        Ref.activeEffect = fn;
+        fn();
+        Ref.activeEffect = null;
+    }
+    depend() {
+        if (Ref.activeEffect) {
+            this.effectList.add(Ref.activeEffect);
+        }
+    }
+    notify() {
+        Array.from(this.effectList).forEach((effect) => {
+            effect();
+        });
+    }
+}
+
+const ref = (value) => new Ref(value);
+const watchEffect = Ref.watchEffect;
+
+// 导出模块 ref watchEffect
+// 测试模块
+
+const num = ref(1);
+
+watchEffect(() => {
+    console.log("watchEffect", num.value * 2);
+});
+
+num.value++;
+num.value++;
+num.value++;
+
+// 输出：watchEffect 2
+// 输出：watchEffect 4
+// 输出：watchEffect 6
+// 输出：watchEffect 8
+```
 
 ## mini-vue-html
 
