@@ -2,7 +2,9 @@
 # 任何命令执行失败时立即退出脚本
 set -e
 
+echo "=========================="
 echo "====== DEPLOY START ======"
+echo "=========================="
 
 # 保存并推送仓库
 git add .
@@ -34,4 +36,6 @@ git push -f git@github.com:peichenhu/peichenhu.github.io.git master
 # 快速切换到你之前所在的目录
 cd -
 
-echo "====== DEPLOY SUCCESS ======"
+echo "=========================="
+echo "====== DEPLOY END   ======"
+echo "=========================="
