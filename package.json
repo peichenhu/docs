@@ -1,6 +1,6 @@
 {
     "name": "docs",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "description": "个人文档",
     "scripts": {
         "deploy": "sh deploy.sh",
