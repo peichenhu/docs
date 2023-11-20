@@ -29,11 +29,11 @@ cd dist
 # 如果你是要部署到自定义域名
 echo 'docs.peichenhu.cn' > CNAME
 
-git init
+git init --initial-branch=main
 git add -A
 git commit -m 'deploy'
 
-# 如果你想要部署到 https://<USERNAME>.github.io/<REPO>
+# 如果你想要部署到 git push -f <远程仓库: https|ssh> <本地分支>:<远程分支>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 git push -f git@github.com:peichenhu/peichenhu.github.io.git main
 
