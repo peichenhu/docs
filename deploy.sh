@@ -10,16 +10,15 @@ echo "=========================="
 git config --global user.email "pch1024@outlook.com"
 git config --global user.name "pch1024"
 
-
 # 保存并推送仓库
-git add .
-git commit -m "deploy"
-git push
+# git add .
+# git commit -m "deploy"
+# git push
 
 # 更新版本号
 # npm version major
 # npm version minor
-npm version patch
+# npm version patch
 
 # 构建
 npm run build
@@ -38,9 +37,9 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 git push -f git@github.com:peichenhu/peichenhu.github.io.git master
 
-# 快速切换到你之前所在的目录
-cd -
-
 echo "=========================="
 echo "====== DEPLOY SUCCESS ===="
 echo "=========================="
+
+# 快速切换到你之前所在的目录
+cd -
