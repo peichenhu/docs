@@ -5,7 +5,8 @@
     "scripts": {
         "deploy": "sh deploy.sh",
         "dev": "vitepress dev src --open",
-        "build": "vitepress build src"
+        "build": "vitepress build src",
+        "preview": "vitepress preview src"
     },
     "author": "pch1024",
     "license": "MIT",
