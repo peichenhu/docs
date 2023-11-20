@@ -21,6 +21,7 @@ jobs:
             - run: npm ci # or pnpm install / yarn install / bun install
             - run: node -v
             - run: npm -v
+            - run: echo "$SSH_PRIVATE_KEY"
             - name: Checkout repository
               run: |
                   mkdir -p /home/runner/.ssh/
