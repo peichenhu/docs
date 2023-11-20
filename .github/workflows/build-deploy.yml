@@ -13,13 +13,8 @@ permissions:
     contents: read
     pages: write
     id-token: write
-# 只允许一次并发部署，跳过在进行中的运行和最近排队的运行之间排队的运行。
-# 但是，不要取消正在进行的运行，因为我们希望完成这些生产部署。
-concurrency:
-    group: pages
-    cancel-in-progress: false
 jobs:
-    build-deploy:
+    build:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -33,17 +28,20 @@ jobs:
                   npm ci
                   npm install
                   npm run build
-            - name: deploy
-              run: |
-                  git config --global user.email "pch1024@outlook.com"
-                  git config --global user.name "pch1024"
-                  cd dist
-                  echo 'docs.peichenhu.cn' > CNAME
-                  git init
-                  git add -A
-                  git commit -m 'deploy'
-                  git push -f git@github.com:peichenhu/peichenhu.github.io.git master
-                  cd -
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v2
+              with:
+                path: dist
+    deploy:
+        needs: build
+        environment:
+          name: github-pages
+          url: docs.peichenhu.cn
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
 
 
 
