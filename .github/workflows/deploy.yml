@@ -14,11 +14,17 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-              with:
-                  persist-credentials: true
-                  ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+              # with:
+              #     persist-credentials: true
+              #     ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
             - uses: actions/setup-node@v3
             - run: npm ci # or pnpm install / yarn install / bun install
             - run: node -v
             - run: npm -v
+            - name: Checkout repository
+              run: |
+                  mkdir -p ~/.ssh/
+                  echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+                  chmod 600 ~/.ssh/id_rsa
+                  ssh-keyscan github.com >> ~/.ssh/known_hosts
             - run: npm run deploy
