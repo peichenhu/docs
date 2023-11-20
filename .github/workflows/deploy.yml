@@ -21,11 +21,10 @@ jobs:
             - run: npm ci # or pnpm install / yarn install / bun install
             - run: node -v
             - run: npm -v
-            - run: echo "${{ secrets.SSH_PRIVATE_KEY }}"
             - name: Checkout repository
               run: |
                   mkdir -p /home/runner/.ssh/
-                  echo "$SSH_PRIVATE_KEY" > /home/runner/.ssh/id_rsa
+                  echo "${{ secrets.SSH_PRIVATE_KEY }}" > /home/runner/.ssh/id_rsa
                   chmod 600 /home/runner/.ssh/id_rsa
                   ssh-keyscan github.com >> /home/runner/.ssh/known_hosts
             - run: npm run deploy
