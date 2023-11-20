@@ -45,10 +45,6 @@
           "link": "/10-js/90-正则"
         },
         {
-          "text": "手写",
-          "link": "/10-js/98-手写"
-        },
-        {
           "text": "其他",
           "link": "/10-js/99-其他"
         }
@@ -141,74 +137,80 @@
           "link": "/35-vue/16-vue-生命周期"
         },
         {
+          "text": "vue-key",
+          "link": "/35-vue/22-vue-key"
+        },
+        {
           "text": "vue-3-mini",
           "link": "/35-vue/50-vue-3-mini"
+        },
+        {
+          "text": "vue-3-diff",
+          "link": "/35-vue/65-vue-3-diff"
         },
         {
           "text": "vue-2-diff",
           "link": "/35-vue/66-vue-2-diff"
         },
         {
-          "text": "vue-3-diff",
-          "link": "/35-vue/88-vue-3-diff"
-        },
-        {
-          "text": "Vue-Key的作用",
-          "link": "/35-vue/Vue-Key的作用"
-        },
-        {
-          "text": "Vue-Patch-Children",
-          "link": "/35-vue/Vue-Patch-Children"
-        },
-        {
           "text": "vue-keep-alive",
-          "link": "/35-vue/vue-keep-alive"
+          "link": "/35-vue/89-vue-keep-alive"
         }
       ],
       "collapsed": true
     },
     {
-      "text": "TOOLS",
+      "text": "SNIPPETS",
+      "items": [
+        {
+          "text": "综合",
+          "link": "/36-snippets/10-综合"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "text": "TOOL-DOCS",
       "items": [
         {
           "text": "git",
-          "link": "/38-tools/git"
+          "link": "/38-tool-docs/git"
         },
         {
           "text": "homebrew",
-          "link": "/38-tools/homebrew"
+          "link": "/38-tool-docs/homebrew"
         },
         {
           "text": "linux",
-          "link": "/38-tools/linux"
+          "link": "/38-tool-docs/linux"
         },
         {
           "text": "nginx",
-          "link": "/38-tools/nginx"
+          "link": "/38-tool-docs/nginx"
         },
         {
           "text": "pm2",
-          "link": "/38-tools/pm2"
+          "link": "/38-tool-docs/pm2"
         },
         {
           "text": "shell",
-          "link": "/38-tools/shell"
+          "link": "/38-tool-docs/shell"
         },
         {
           "text": "ssh-keygen",
-          "link": "/38-tools/ssh-keygen"
+          "link": "/38-tool-docs/ssh-keygen"
         },
         {
           "text": "tree",
-          "link": "/38-tools/tree"
+          "link": "/38-tool-docs/tree"
         },
         {
           "text": "vim",
-          "link": "/38-tools/vim"
+          "link": "/38-tool-docs/vim"
         },
         {
           "text": "vitepress",
-          "link": "/38-tools/vitepress"
+          "link": "/38-tool-docs/vitepress"
         }
       ],
       "collapsed": true

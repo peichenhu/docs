@@ -12,6 +12,7 @@ export default defineConfig({
     vue: vueConfig,
     appearance: "dark",
     // base: "/blog/",
+    srcDir: '../src',
     outDir: "../dist",
     title: "PCH1024",
     description: "PCH1024 的备忘录",
