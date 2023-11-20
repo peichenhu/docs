@@ -6,15 +6,17 @@ set -e
 # echo "====== DEPLOY START ======"
 # echo "=========================="
 
-# 保存并推送仓库
-git add .
-git commit -m "deploy"
-git push
-
 # 更新版本号
 # npm version major
 # npm version minor
-npm version patch
+# npm version patch
+
+# 保存并推送仓库
+git add .
+git commit -m "deploy"
+npm version patch # 更新版本号
+git push
+
 
 # # 构建
 # npm run build
