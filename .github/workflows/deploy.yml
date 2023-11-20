@@ -23,8 +23,8 @@ jobs:
             - run: npm -v
             - name: Checkout repository
               run: |
-                  mkdir -p ~/.ssh/
-                  echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-                  chmod 600 ~/.ssh/id_rsa
-                  ssh-keyscan github.com >> ~/.ssh/known_hosts
+                  mkdir -p /home/runner/.ssh/
+                  echo "$SSH_PRIVATE_KEY" > /home/runner/.ssh/id_rsa
+                  chmod 600 /home/runner/.ssh/id_rsa
+                  ssh-keyscan github.com >> /home/runner/.ssh/known_hosts
             - run: npm run deploy
