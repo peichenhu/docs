@@ -1,3 +1,5 @@
+# ssh-keygen -t rsa -b 4096 -C "pch1024@outlook.com"
+
 name: deploy
 on:
     push:
@@ -7,18 +9,16 @@ permissions:
     contents: read
     pages: write
     id-token: write
-concurrency:
-    group: pages
-    cancel-in-progress: false
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
+              with:
+                  persist-credentials: false
+                  ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
             - uses: actions/setup-node@v3
             - run: npm ci # or pnpm install / yarn install / bun install
             - run: node -v
             - run: npm -v
             - run: npm run deploy
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
