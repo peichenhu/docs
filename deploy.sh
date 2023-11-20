@@ -7,6 +7,9 @@ echo "====== DEPLOY START ======"
 echo "=========================="
 
 # ssh -T git@github.com
+git config --global user.email "pch1024@outlook.com"
+git config --global user.name "pch1024"
+
 
 # 保存并推送仓库
 git add .
