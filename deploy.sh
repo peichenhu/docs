@@ -6,6 +6,8 @@ echo "=========================="
 echo "====== DEPLOY START ======"
 echo "=========================="
 
+ssh -T git@github.com
+
 # 保存并推送仓库
 git add .
 git commit -m "deploy"
