@@ -61,6 +61,14 @@
         {
           "text": "CSS",
           "link": "/15-css/CSS"
+        },
+        {
+          "text": "Flex",
+          "link": "/15-css/Flex"
+        },
+        {
+          "text": "固定比例的盒子",
+          "link": "/15-css/固定比例的盒子"
         }
       ],
       "collapsed": true
@@ -167,6 +175,10 @@
           "link": "/35-vue/66-vue-2-diff"
         },
         {
+          "text": "vuex",
+          "link": "/35-vue/70-vuex"
+        },
+        {
           "text": "vue-keep-alive",
           "link": "/35-vue/89-vue-keep-alive"
         }
@@ -247,10 +259,6 @@
       "text": "OTHERS",
       "items": [
         {
-          "text": "Emoji",
-          "link": "/40-others/Emoji"
-        },
-        {
           "text": "Markdown语法",
           "link": "/40-others/Markdown语法"
         },
@@ -269,6 +277,10 @@
         {
           "text": "编程字画",
           "link": "/40-others/编程字画"
+        },
+        {
+          "text": "表情大全",
+          "link": "/40-others/表情大全"
         }
       ],
       "collapsed": true
