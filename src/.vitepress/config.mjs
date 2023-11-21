@@ -15,7 +15,7 @@ export default defineConfig({
     srcDir: '../src',
     outDir: "../dist",
     title: "PCH1024",
-    description: "PCH1024 的备忘录",
+    description: "PCH1024 的文档站",
     rewrites: {
         // 'source/:page': 'destination/:page'
     },
@@ -41,7 +41,6 @@ export default defineConfig({
         },
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: "RunJS", link: "https://poe.com/" },
             { text: "POE-AI", link: "https://poe.com/" },
             { text: "背单词", link: "https://fanyi.baidu.com/collection" },
             {
@@ -49,9 +48,9 @@ export default defineConfig({
                 items: [
                     {
                         text: "GITHUB 托管",
-                        link: "https://git.peichenhu.cn/blog",
+                        link: "https://docs.peichenhu.cn",
                     },
-                    { text: "百度云托管", link: "https://120.48.97.59/blog/" },
+                    { text: "百度云托管", link: "http://120.48.97.59" },
                 ],
             },
         ],

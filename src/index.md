@@ -2,8 +2,8 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: Blog
-titleTemplate: PCH1024 的静态文档网站
+title: Docs
+titleTemplate: PCH1024 的文档站
 
 hero:
     name: "我的世界"

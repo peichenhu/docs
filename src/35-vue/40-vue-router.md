@@ -1,4 +1,4 @@
-# VueRouter
+# vue-router
 
 ## 3 种模式
 
@@ -107,6 +107,6 @@ server {
 ```js
 const router = new VueRouter({
     mode: "history",
-    routes: [{ path: "*", component: NotFoundComponent }]
+    routes: [{ path: "*", component: NotFoundComponent }],
 });
 ```

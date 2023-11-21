@@ -92,6 +92,16 @@
       "collapsed": true
     },
     {
+      "text": "BUILD",
+      "items": [
+        {
+          "text": "前端工程化",
+          "link": "/25-build/10-前端工程化"
+        }
+      ],
+      "collapsed": true
+    },
+    {
       "text": "LEETCODE",
       "items": [
         {
@@ -139,6 +149,10 @@
         {
           "text": "vue-key",
           "link": "/35-vue/22-vue-key"
+        },
+        {
+          "text": "vue-router",
+          "link": "/35-vue/40-vue-router"
         },
         {
           "text": "vue-3-mini",
