@@ -42,14 +42,19 @@ function cloneObject(data = {}, beforeRecursion) {
     // _data.prototype = Object.getPrototypeOf(data); // 处理原型
     beforeRecursion(data, _data); // 递归前操作
     // 处理可枚举的自身非继承属性
-    for (const key in data) {
-        if (Object.hasOwnProperty.call(data, key)) {
-            _data[key] = deepClone(data[key]);
-        }
+    // for (const key in data) {
+    //     if (Object.hasOwnProperty.call(data, key)) {
+    //         _data[key] = deepClone(data[key]);
+    //     }
+    // }
+
+    // 处理可枚举的自身非继承属性
+    for (const key of Object.keys(data)) {
+        _data[key] = deepClone(data[key]);
     }
     // 处理不可枚举的 Symbol 属性
-    for (const sKey of Object.getOwnPropertySymbols(data)) {
-        _data[sKey] = deepClone(data[sKey]);
+    for (const key of Object.getOwnPropertySymbols(data)) {
+        _data[key] = deepClone(data[key]);
     }
     return _data;
 }
