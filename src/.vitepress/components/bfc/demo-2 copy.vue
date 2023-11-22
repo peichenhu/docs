@@ -1,0 +1,140 @@
+
+<template>
+	<div class="demo-1">
+		<h2>清楚浮动(高度塌陷): 将包含浮动元素的父元素设置为BFC</h2>
+		<div class="row">
+			<div class="left">
+				<div class="parent">
+					<p>父元素区域</p>
+					<div class="child" style="float: left">
+						<p>子元素 float: left;</p>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="parent bfc">
+					<p>BFC 父元素区域</p>
+					<div class="child" style="float: left">
+						<p>子元素 float: left;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+        <br>
+        <br>
+        <br>
+		<h2>清除外边距折叠: 相邻元素，给其中一个添加一个 BFC 容器</h2>
+		<div class="row">
+			<div class="left">
+				<div class="parent">
+					<p>父元素区域</p>
+					<p class="child" style="margin: 10px 0">子元素 margin: 10px 0;</p>
+					<p class="child" style="margin: 10px 0">子元素 margin: 10px 0;</p>
+					<p class="child" style="margin: 10px 0">子元素 margin: 10px 0;</p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="parent">
+					<p>父元素区域，外边距折叠仅与垂直方向有关</p>
+					<div class="bfc">
+						<p class="child" style="margin: 10px 0">BFC 容器的子元素 margin: 10px 0; 清除外边距折叠</p>
+					</div>
+					<p class="child" style="margin: 10px 0">子元素 margin: 10px 0;</p>
+					<p class="child" style="margin: 10px 0">子元素 margin: 10px 0;</p>
+				</div>
+			</div>
+		</div>
+        <br>
+        <br>
+        <br>
+		<h2>清除外边距折叠: 父子元素，给父元素设置 BFC</h2>
+		<pre>
+            如果块级父元素中，不存在上边框、上内补、inline content、 清除浮动这四条属性 <br>
+            (对于上边框和上内补，也可以说，当上边距及上内补宽度为0时), <br>
+            那么这个块级元素和其第一个子元素的上边距就会发生折叠。 <br>
+            这个折叠之后的值在这里取的就是两者之间的最大值。
+        </pre>
+		<div class="row">
+			<div class="left">
+				<div class="parent" style="margin: 20px 0; border: none">
+					<p class="child" style="margin: 30px 0">子元素 margin: 30px 0</p>
+					<p>父元素区域 margin: 20px 0;border: none;</p>
+				</div>
+				<hr />
+			</div>
+			<div class="right">
+				<div class="parent bfc" style="margin: 20px 0; border: none">
+					<p class="child" style="margin: 30px 0">子元素 margin: 30px 0</p>
+					<p>BFC 父元素区域 margin: 20px 0;border: none;</p>
+				</div>
+				<hr />
+			</div>
+		</div>
+        <br>
+        <br>
+        <br>
+		<h2>清除浮动元素文本环绕: 给非浮动元素设置 BFC</h2>
+		<div class="row">
+			<div class="left">
+				<div class="parent">
+					<!-- <p>父元素区域</p> -->
+					<div class="child" style="float: left">子元素 float: left</div>
+					<p>
+						这是一个浮动元素后面的文本内容。在没有创建BFC的情况下，这段文本可能会被浮动元素覆盖。这是一个浮动元素后面的文本内容。在没有创建BFC的情况下，这段文本可能会被浮动元素覆盖。这是一个浮动元素后面的文本内容。在没有创建BFC的情况下，这段文本可能会被浮动元素覆盖。
+					</p>
+				</div>
+				<hr />
+			</div>
+			<div class="right">
+				<div class="parent">
+					<!-- <p>父元素区域</p> -->
+					<div class="child" style="float: left">子元素 float: left</div>
+					<p class="bfc">
+						这是一个浮动元素后面的文本内容。在没有创建BFC的情况下，这段文本可能会被浮动元素覆盖。这是一个浮动元素后面的文本内容。在没有创建BFC的情况下，这段文本可能会被浮动元素覆盖。这是一个浮动元素后面的文本内容。在没有创建BFC的情况下，这段文本可能会被浮动元素覆盖。
+					</p>
+				</div>
+				<hr />
+			</div>
+		</div>
+	</div>
+</template>
+
+<style scoped lang="less">
+.demo-1 * {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+.row {
+	display: flex;
+	flex-flow: row nowrap;
+	border: 1px solid lightgray;
+}
+.row > .left,
+.row > .right {
+	box-sizing: border-box;
+	width: 50%;
+	border: 1px solid lightgray;
+	padding: 2px;
+}
+.parent {
+	background: rgba(255, 0, 0, 0.1);
+	border: 1px solid lightgray;
+}
+.child {
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	background: rgba(255, 255, 0, 0.1);
+	border: 1px solid lightgray;
+}
+.bfc {
+	overflow: hidden;
+	box-shadow: inset 0 0px 11px 1px rgba(255, 0, 0, 0.5);
+	/* overflow: scroll; */
+	/* overflow: auto; */
+	/* float: left; */
+	/* float: right; */
+	/* display: flex; */
+}
+</style>

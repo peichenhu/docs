@@ -2,7 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: Docs
+title: docs
 titleTemplate: PCH1024 的文档站
 
 hero:

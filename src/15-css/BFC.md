@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-    import BfcDemo1 from '../.vitepress/components/bfc/demo-1.vue'
+    import BFCDemo1 from '../.vitepress/components/bfc/demo-1.vue'
+    import BFCDemo2 from '../.vitepress/components/bfc/demo-2.vue'
+    import BFCDemo3 from '../.vitepress/components/bfc/demo-3.vue'
 </script>
 
 # BFC
@@ -23,6 +25,7 @@
 
 ---
 
+## 避免高度塌陷
 
 ::: details 查看代码
 
@@ -30,9 +33,41 @@
 
 :::
 
-::: details 查看效果
+::: info 避免高度塌陷: 将包含浮动元素的父元素设置为 BFC
 
-<BfcDemo1 />
+<BFCDemo1 />
 
 :::
 
+## 避免外边距折叠(相邻元素)
+
+::: details 查看代码
+
+<<< @/.vitepress/components/bfc/demo-2.vue
+
+:::
+
+::: info 避免外边距折叠: 相邻元素外边距折叠，给其中一个元素添加一个 BFC 容器
+
+<BFCDemo2 />
+
+:::
+
+## 避免外边距折叠(父子元素)
+
+如果块级父元素中，不存在`上边框`、`上内补`、`inline content`、 `清除浮动`这四条属性，<br />
+(对于上边框和上内补，也可以说，当上边距及上内补宽度为 0 时)，<br />
+那么这个`块级元素`和`其第一个子元素`就会发生`上边距折叠`。 <br />
+这个折叠之后的值在这里取的就是`两者之间的最大值`。
+
+::: details 查看代码
+
+<<< @/.vitepress/components/bfc/demo-3.vue
+
+:::
+
+::: info 避免外边距折叠: 父子元素，给父元素设置 BFC
+
+<BFCDemo3 />
+
+:::
