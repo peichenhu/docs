@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+    import BfcDemo1 from '../.vitepress/components/bfc/demo-1.vue'
+</script>
+
 # BFC
 
 > [BFC](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
@@ -16,3 +20,19 @@
 -   包含内部浮动，防止父元素高度塌陷。
 -   排除外部浮动，防止覆盖兄弟元素和禁止文本环绕。
 -   阻止垂直方向外边距重叠（包含兄弟元素外边距重叠和父子元素外边距折叠）。
+
+---
+
+
+::: details 查看代码
+
+<<< @/.vitepress/components/bfc/demo-1.vue
+
+:::
+
+::: details 查看效果
+
+<BfcDemo1 />
+
+:::
+

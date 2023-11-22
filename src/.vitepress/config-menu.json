@@ -67,8 +67,16 @@
           "link": "/15-css/Flex"
         },
         {
+          "text": "Position",
+          "link": "/15-css/Position"
+        },
+        {
           "text": "固定比例的盒子",
           "link": "/15-css/固定比例的盒子"
+        },
+        {
+          "text": "滚动吸附",
+          "link": "/15-css/滚动吸附"
         }
       ],
       "collapsed": true
