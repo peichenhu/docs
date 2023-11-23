@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import Btn from './btn.vue';
+import Btn from '../btn/btn.vue';
 
 const props = defineProps(['bfcStyle']);
 const emit = defineEmits(['update:bfcStyle']);

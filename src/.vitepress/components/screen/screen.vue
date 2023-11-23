@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-
+const props = defineProps(['minHeight']);
 const screenWidth = ref(100);
 const screenStyle = computed(() => {
 	document.documentElement.style.setProperty('--screen-width', screenWidth.value + 'vw');
 	return {
+		minHeight: (props.minHeight || 400) + 'px',
 		width: screenWidth.value + '%'
 	};
 });
@@ -46,7 +47,6 @@ const screenStyle = computed(() => {
 	}
 	.body {
 		background: white;
-		min-height: 400px;
 	}
 }
 </style>

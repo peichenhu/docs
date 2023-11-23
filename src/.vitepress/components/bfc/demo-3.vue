@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Btn from './btn.vue';
+import Btn from '../btn/btn.vue';
 const useBFC = ref(false);
 </script>
 

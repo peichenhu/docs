@@ -4,11 +4,30 @@ Flexible Box 模型，通常被称为 flexbox，是一种一维的布局模型�
 
 ```css
 * {
-	display: flex; /**定义弹性布局 */
-	flex-flow: row wrap; /**定义容器主轴和多行排列形式 */
-	flex: 1 1 auto; /**定义元素伸缩比例 */
-	place-items: center center; /**定义元素对齐形式 */
-	gap: 3px 3px; /**定义行列间距 */
+	/* 容器属性 8 个 */
+	display: 			flex; /* 弹性盒子 */
+	align-content: 		flex-start flex-end center space-between space-around stretch; /* 设置行对齐 */
+	flex-direction: 	row row-reverse column column-reverse; /* 子元素的排列方式 */
+	flex-wrap: 			nowrap wrap wrap-reverse initial inherit; /* 子元素超出父容器时是否换行 */
+	justify-content: 	flex-start flex-end center space-between space-around; /* 在主轴（横轴）方向上的对齐方式 */
+	align-items: 		flex-start flex-end center baseline stretch; /* 在侧轴（纵轴）方向上的对齐方式 */
+	row-gap: 			<length | percentage>; /* 行元素之间的间隙（gutter）大小 */
+	column-gap: 		<length | percentage>; /* 列元素之间的间隙（gutter）大小 */
+
+	/* 元素属性 5 个 */
+	flex-grow: 			<number [0,∞]>; /* 元素在主轴方向上的增长系数 */
+	flex-shrink: 		<number [0,∞]>; /* 元素在主轴方向上的收缩规则 */
+	flex-basis: 		<auto | length | content>; /* 元素在主轴方向上的初始大小 */
+	order: 				<integer>; /* 元素在布局时的顺序 */
+	align-self: 		auto flex-start flex-end center baseline stretch; /* 元素对齐当前 grid 或 flex 行中的元素，并覆盖已有的 align-items 的值 */
+
+	/* 容器属性简写  */
+	flex-flow: 			<flex-direction> <flex-wrap>;
+	place-items: 		<justify-content> <align-items>;
+	gap: 				<row-gap> <column-gap>;
+
+	/* 元素属性简写 */
+	flex: 				<flex-grow> <flex-shrink> <flex-basis>;
 }
 ```
 

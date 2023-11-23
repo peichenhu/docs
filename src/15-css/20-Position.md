@@ -33,7 +33,7 @@
 
 :::
 
-::: details 查看效果
+::: info 查看 sticky 效果
 
 <StickyDemo1 />
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Btn from './btn.vue';
+import Btn from '../btn/btn.vue';
 import BFC from './bfc.vue';
 const useBFC = ref(false);
 </script>
@@ -14,12 +14,12 @@ const useBFC = ref(false);
 		</div>
 
 		<div class="parent">
-			<p>父元素区域，外边距折叠仅与垂直方向有关</p>
-			<p class="child" style="margin: 10px 0">子元素一 ：margin: 10px 0;</p>
+			<div>父元素区域，外边距折叠仅与垂直方向有关</div>
+			<div class="child">子元素一 ：margin: 10px 0;</div>
 			<BFC :useBFC="useBFC">
-				<p class="child" style="margin: 10px 0">子元素二 ：margin: 10px 0;</p>
+				<div class="child">子元素二 ：margin: 10px 0;</div>
 			</BFC>
-			<p class="child" style="margin: 10px 0">子元素三 ：margin: 10px 0;</p>
+			<div class="child">子元素三 ：margin: 10px 0;</div>
 		</div>
 	</div>
 </template>

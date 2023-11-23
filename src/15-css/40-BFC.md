@@ -2,6 +2,7 @@
     import BFCDemo1 from '../.vitepress/components/bfc/demo-1.vue'
     import BFCDemo2 from '../.vitepress/components/bfc/demo-2.vue'
     import BFCDemo3 from '../.vitepress/components/bfc/demo-3.vue'
+    import BFCDemo4 from '../.vitepress/components/bfc/demo-4.vue'
 </script>
 
 # BFC
@@ -69,5 +70,21 @@
 ::: info 避免外边距折叠: 父子元素，给父元素设置 BFC
 
 <BFCDemo3 />
+
+:::
+
+## 清除浮动元素文本环绕和覆盖
+
+清除浮动元素文本环绕: 给非浮动元素设置 BFC
+
+::: details 查看代码
+
+<<< @/.vitepress/components/bfc/demo-4.vue
+
+:::
+
+::: info 清除浮动元素文本环绕: 给非浮动元素设置 BFC
+
+<BFCDemo4 />
 
 :::

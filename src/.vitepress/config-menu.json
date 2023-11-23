@@ -55,28 +55,36 @@
       "text": "CSS",
       "items": [
         {
-          "text": "BFC",
-          "link": "/15-css/BFC"
-        },
-        {
           "text": "CSS",
-          "link": "/15-css/CSS"
+          "link": "/15-css/10-CSS"
         },
         {
-          "text": "Flex",
-          "link": "/15-css/Flex"
+          "text": "选择器",
+          "link": "/15-css/15-选择器"
         },
         {
           "text": "Position",
-          "link": "/15-css/Position"
+          "link": "/15-css/20-Position"
         },
         {
-          "text": "固定比例的盒子",
-          "link": "/15-css/固定比例的盒子"
+          "text": "Flex",
+          "link": "/15-css/30-Flex"
+        },
+        {
+          "text": "BFC",
+          "link": "/15-css/40-BFC"
+        },
+        {
+          "text": "等比例盒子",
+          "link": "/15-css/50-等比例盒子"
         },
         {
           "text": "滚动吸附",
-          "link": "/15-css/滚动吸附"
+          "link": "/15-css/60-滚动吸附"
+        },
+        {
+          "text": "居中布局",
+          "link": "/15-css/70-居中布局"
         }
       ],
       "collapsed": true
