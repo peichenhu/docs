@@ -29,29 +29,25 @@
 ## 避免高度塌陷
 
 ::: details 查看代码
-
 <<< @/.vitepress/components/bfc/demo-1.vue
-
 :::
 
 ::: info 避免高度塌陷: 将包含浮动元素的父元素设置为 BFC
-
+<ClientOnly>
 <BFCDemo1 />
-
+</ClientOnly>
 :::
 
 ## 避免外边距折叠(相邻元素)
 
 ::: details 查看代码
-
 <<< @/.vitepress/components/bfc/demo-2.vue
-
 :::
 
 ::: info 避免外边距折叠: 相邻元素外边距折叠，给其中一个元素添加一个 BFC 容器
-
+<ClientOnly>
 <BFCDemo2 />
-
+</ClientOnly>
 :::
 
 ## 避免外边距折叠(父子元素)
@@ -62,15 +58,13 @@
 这个折叠之后的值在这里取的就是`两者之间的最大值`。
 
 ::: details 查看代码
-
 <<< @/.vitepress/components/bfc/demo-3.vue
-
 :::
 
 ::: info 避免外边距折叠: 父子元素，给父元素设置 BFC
-
+<ClientOnly>
 <BFCDemo3 />
-
+</ClientOnly>
 :::
 
 ## 清除浮动元素文本环绕和覆盖
@@ -78,13 +72,11 @@
 清除浮动元素文本环绕: 给非浮动元素设置 BFC
 
 ::: details 查看代码
-
 <<< @/.vitepress/components/bfc/demo-4.vue
-
 :::
 
 ::: info 清除浮动元素文本环绕: 给非浮动元素设置 BFC
-
+<ClientOnly>
 <BFCDemo4 />
-
+</ClientOnly>
 :::
