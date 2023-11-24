@@ -1,0 +1,56 @@
+# 配置参考文档 https://eslint.org/docs/latest/use/getting-started
+# 配置运行环境
+env:
+    browser: true
+    es2021: true
+# FIX Warning: React version not specified in eslint-plugin-react settings.
+settings:
+    react:
+        version: '18.2.0'
+# 配置规则继承
+extends:
+    - eslint:recommended
+    - plugin:@typescript-eslint/recommended
+    - plugin:react/recommended
+    - plugin:react/jsx-runtime
+    - plugin:react-hooks/recommended
+    - plugin:vue/vue3-essential
+    - prettier # 关闭所有不必要或可能与 Prettier 冲突的规则。确保把它放在最后，这样它就有机会覆盖其他配置
+# 配置解析器
+parserOptions:
+    ecmaVersion: latest
+    parser: '@typescript-eslint/parser'
+    sourceType: module
+    ecmaFeatures:
+        jsx: true
+# 配置插件
+plugins:
+    - '@typescript-eslint'
+    - vue
+    - react
+    - react-hooks
+    - prettier
+# 配置忽略
+ignorePatterns:
+    - .eslintrc.cjs
+    - .eslintrc.yml
+    - node_modules
+    - dist
+# 配置详细规则
+rules:
+    react/jsx-uses-react: error
+    react/jsx-uses-vars: error
+    react-hooks/rules-of-hooks: error
+    react-hooks/exhaustive-deps: warn
+    indent:
+        - error
+        - tab
+    linebreak-style:
+        - error
+        - unix
+    quotes:
+        - error
+        - single
+    semi:
+        - error
+        - always
