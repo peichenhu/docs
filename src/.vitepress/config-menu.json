@@ -223,6 +223,10 @@
       "text": "TOOL-DOCS",
       "items": [
         {
+          "text": "git-hooks",
+          "link": "/38-tool-docs/git-hooks"
+        },
+        {
           "text": "git",
           "link": "/38-tool-docs/git"
         },
