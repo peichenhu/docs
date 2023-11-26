@@ -39,6 +39,7 @@ git remote add origin git@github.com:peichenhu/test1.git
 # 状态
 git log # 仓库状态
 git status # 分支状态
+git checkout -- . # 撤销所有未暂存的更改
 
 # 暂存
 git add . # 暂存全部
@@ -112,4 +113,8 @@ git commit -m 'deploy'
 # 如果你想要部署到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 git push -f git@github.com:peichenhu/peichenhu.github.io.git master
+
+
+## 合并但不提交更改
+git merge --no-commit <other-branch>
 ```
