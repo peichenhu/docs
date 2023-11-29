@@ -1,0 +1,4 @@
+
+## LimitPromise
+
+<<< @/../snippets/LimitPromise.js

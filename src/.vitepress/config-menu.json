@@ -215,6 +215,10 @@
         {
           "text": "综合",
           "link": "/36-snippets/10-综合"
+        },
+        {
+          "text": "LimitPromise",
+          "link": "/36-snippets/LimitPromise"
         }
       ],
       "collapsed": true
@@ -241,6 +245,10 @@
         {
           "text": "nginx",
           "link": "/38-tool-docs/nginx"
+        },
+        {
+          "text": "npm",
+          "link": "/38-tool-docs/npm"
         },
         {
           "text": "pm2",
