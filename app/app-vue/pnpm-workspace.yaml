@@ -1,0 +1,4 @@
+# monorepo/pnpm-workspace.yaml
+packages:
+    # 指定所有的仓库放在 packages 子目录中
+    - 'packages/*'

@@ -74,8 +74,8 @@ Vue 将 data 中的数组进行了原型链重写，指向了自己定义的数�
 nextTick 主要使用了`宏任务`和`微任务`。根据执行环境分别尝试采用
 
 -   Promise
--   MutationObserver
 -   setImmediate
+-   MessageChannel
 -   如果以上都不行则采用 setTimeout
 
 ## 接口请求在哪个生命周期中?

@@ -217,8 +217,16 @@
           "link": "/36-snippets/10-综合"
         },
         {
-          "text": "LimitPromise",
-          "link": "/36-snippets/LimitPromise"
+          "text": "promise",
+          "link": "/36-snippets/promise"
+        },
+        {
+          "text": "抽奖去重",
+          "link": "/36-snippets/抽奖去重"
+        },
+        {
+          "text": "节流防抖",
+          "link": "/36-snippets/节流防抖"
         }
       ],
       "collapsed": true
