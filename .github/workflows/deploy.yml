@@ -25,4 +25,4 @@ jobs:
                   echo "${{ secrets.SSH_PRIVATE_KEY }}" > /home/runner/.ssh/id_rsa
                   chmod 600 /home/runner/.ssh/id_rsa
                   ssh-keyscan github.com >> /home/runner/.ssh/known_hosts
-            - run: pnpm deploy
+            - run: pnpm run deploy

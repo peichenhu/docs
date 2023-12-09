@@ -16,12 +16,12 @@ git config --global user.name "pch1024"
 # git push
 
 # 更新版本号
-# npm version major
-# npm version minor
-# npm version patch
+# pnpm version major
+# pnpm version minor
+# pnpm version patch
 
 # 构建
-npm run build
+pnpm run build
 
 # 进入生成的构建文件夹
 cd dist
