@@ -1,8 +1,8 @@
-import {defineConfig} from 'vitepress';
+import { defineConfig } from 'vitepress';
 import viteConfig from './config.vite.mjs';
 import vueConfig from './config.vue.mjs';
 // import MENU from "./config-menu.json";
-import {createMenu} from './utils/sidebar.mjs';
+import { createMenu } from './utils/sidebar.mjs';
 const MENU = createMenu();
 const VERSION = process.env.npm_package_version;
 
@@ -23,8 +23,8 @@ export default defineConfig({
 		// 'source/:page': 'destination/:page'
 	},
 	head: [
-		['meta', {name: 'theme-color', content: '#0f00ee'}],
-		['link', {rel: 'icon', href: '/logo.svg'}]
+		['meta', { name: 'theme-color', content: '#0f00ee' }],
+		['link', { rel: 'icon', href: '/logo.svg' }]
 	],
 	themeConfig: {
 		lastUpdated: true,
@@ -35,7 +35,7 @@ export default defineConfig({
 			lineNumbers: true
 		},
 		editLink: {
-			pattern: ({filePath}) => {
+			pattern: ({ filePath }) => {
 				return `https://github.com/peichenhu/blog/edit/main/src/${filePath}`;
 			}
 		},
@@ -44,8 +44,8 @@ export default defineConfig({
 		},
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
-			{text: 'POE-AI', link: 'https://poe.com/'},
-			{text: '背单词', link: 'https://fanyi.baidu.com/collection'},
+			{ text: 'POE-AI', link: 'https://poe.com/' },
+			{ text: '背单词', link: 'https://fanyi.baidu.com/collection' },
 			{
 				text: '切换',
 				items: [
@@ -53,7 +53,7 @@ export default defineConfig({
 						text: 'GITHUB 托管',
 						link: 'https://docs.peichenhu.cn'
 					},
-					{text: '百度云托管', link: 'http://120.48.97.59'}
+					{ text: '百度云托管', link: 'http://120.48.97.59' }
 				]
 			}
 		],
@@ -61,7 +61,7 @@ export default defineConfig({
 			...MENU,
 			{
 				text: '网站导航',
-				items: [{text: 'HOME', link: '/home'}]
+				items: [{ text: 'HOME', link: '/home' }]
 			}
 		],
 		footer: {
@@ -69,6 +69,6 @@ export default defineConfig({
 			message: " ༼ つ/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿◕ _◕ ༽つ/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿",
 			copyright: 'COPYRIGHT © 1992-PRESENT PCH1024-V' + VERSION
 		},
-		socialLinks: [{icon: 'github', link: 'https://github.com/peichenhu'}]
+		socialLinks: [{ icon: 'github', link: 'https://github.com/peichenhu' }]
 	}
 });

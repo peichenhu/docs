@@ -171,12 +171,12 @@
       "text": "VUE",
       "items": [
         {
-          "text": "vue-综合",
-          "link": "/35-vue/10-vue-综合"
+          "text": "vue",
+          "link": "/35-vue/10-vue"
         },
         {
-          "text": "vue-生命周期",
-          "link": "/35-vue/16-vue-生命周期"
+          "text": "vue-life-cycle",
+          "link": "/35-vue/16-vue-life-cycle"
         },
         {
           "text": "vue-key",
@@ -197,6 +197,10 @@
         {
           "text": "vue-2-diff",
           "link": "/35-vue/66-vue-2-diff"
+        },
+        {
+          "text": "vue-2-new-vue",
+          "link": "/35-vue/67-vue-2-new-vue"
         },
         {
           "text": "vuex",
@@ -273,6 +277,10 @@
         {
           "text": "tree",
           "link": "/38-tool-docs/tree"
+        },
+        {
+          "text": "tsconfig",
+          "link": "/38-tool-docs/tsconfig"
         },
         {
           "text": "vim",

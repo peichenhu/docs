@@ -13,13 +13,16 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-node@v3
-            - run: npm ci
+            - uses: actions/checkout@v4
+            - uses: pnpm/action-setup@v2
+              with:
+                  version: 8
+            - uses: actions/setup-node@v4
+            - run: pnpm install
             - name: ssh
               run: |
                   mkdir -p /home/runner/.ssh/
                   echo "${{ secrets.SSH_PRIVATE_KEY }}" > /home/runner/.ssh/id_rsa
                   chmod 600 /home/runner/.ssh/id_rsa
                   ssh-keyscan github.com >> /home/runner/.ssh/known_hosts
-            - run: npm run deploy
+            - run: pnpm deploy

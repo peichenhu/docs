@@ -1,5 +1,24 @@
 # Vue
 
+## VueTemplate 和响应式数据的绑定关系
+
+`VueTemplate` 编译过程中使用 `with` 语句，尽管在 JS 中通常不建议使用它。<br/>
+这是因为 `with` 语句可以简化模板编译过程，使得模板的作用域与 `with` 的作用域正好契合。<br/>
+
+`VueTemplate` 可以在构建时预编译为渲染函数，这样在运行时就不需要使用 `with` 语句。<br/>
+预编译可以通过像 `vue-loader` 这样的工具来实现。
+
+```js
+// 使用 new Function('scope') + with(scope){} + call(this) 转换代码块的上下文和作用域。
+let expression = 'this.text + text';
+let render = new Function('scope', `with(scope) { return ${expression}; }`);
+let vm = { text: '我是 Vue this 的数据；' };
+let data = { text: '我是 Vue data 的响应式数据；' };
+let res = render.call(vm, data);
+console.log(res);
+// 我是 Vue this 的数据；我是 Vue data 的响应式数据；
+```
+
 ## Vue2 响应式原理
 
 Vue 通过 `Object.definedProperty` 对 data 上的属性重新定义，转为 getter/setter,
@@ -7,9 +26,9 @@ Vue 通过 `Object.definedProperty` 对 data 上的属性重新定义，转为 g
 
 Vue 的数据双向绑定整合了 Observer，Compile 和 Watcher 三者，
 
--   通过 Observer 来监听自己的 model 的数据变化，
--   通过 Compile 来解析编译模板指令，
--   通过 Watcher 负责 Observer 和 Compile 之间的通信，达到`数据变化->视图更新`，`视图交互变化->数据 model 变更`的双向绑定效果。
+-   通过 Observer 观测数据变化
+-   通过 Compile 解析编译模板
+-   通过 Watcher 负责 Observer 和 Compile 之间的通信，达到`数据变化->视图更新`，`视图交互变化->数据变更`的双向绑定效果。
 
 ## v-model 指令双向绑定的原理？
 
