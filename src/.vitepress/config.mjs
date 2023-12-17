@@ -44,7 +44,8 @@ export default defineConfig({
 		},
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
-			{ text: 'POE-AI', link: 'https://poe.com/' },
+			{ text: 'Tools', link: 'https://docs.peichenhu.cn/docs-tools' },
+			{ text: 'POE-AI', link: 'https://poe.com' },
 			{ text: '背单词', link: 'https://fanyi.baidu.com/collection' },
 			{
 				text: '切换',
