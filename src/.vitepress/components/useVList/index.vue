@@ -12,13 +12,8 @@ const { vObserver, vList } = useVirtualList(dataList, scroll);
 		<title>VList</title>
 		<div class="scroll-wrap" v-scroll-y>
 			<template v-for="item in vList" :key="item.id">
-				<div
-					v-observer
-					class="module"
-					:style="{ height: item.height + 'px' }"
-					:data-index="item.id"
-				>
-					{{ item.height }}
+				<div v-observer class="module" :style="{ height: item.height + 'px' }" :data-index="item.id">
+					index:{{ item.id }}--height: {{ item.height }}
 				</div>
 			</template>
 		</div>
