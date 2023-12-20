@@ -85,6 +85,10 @@
         {
           "text": "居中布局",
           "link": "/15-css/70-居中布局"
+        },
+        {
+          "text": "虚拟列表",
+          "link": "/15-css/80-虚拟列表"
         }
       ],
       "collapsed": true
@@ -129,6 +133,10 @@
         {
           "text": "前端版本管理",
           "link": "/25-build/30-前端版本管理"
+        },
+        {
+          "text": "changesets",
+          "link": "/25-build/40-changesets"
         }
       ],
       "collapsed": true
