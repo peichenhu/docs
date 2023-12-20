@@ -30,6 +30,7 @@ const { vObserver, vList } = useVirtualList(dataList, scroll);
 		height: 500px;
 		overflow: hidden auto;
 		padding: 1em;
+		scroll-behavior: smooth;
 	}
 	.module {
 		border: 1px dashed red;
