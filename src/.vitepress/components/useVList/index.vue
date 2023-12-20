@@ -31,6 +31,8 @@ const { vObserver, vList } = useVirtualList(dataList, scroll);
 		overflow: hidden auto;
 		padding: 1em;
 		scroll-behavior: smooth;
+		// -webkit-overflow-scrolling: touch; /* 当手指从触摸屏上移开，会保持一段时间的滚动 */
+		-webkit-overflow-scrolling: auto; /* 当手指从触摸屏上移开，滚动会立即停止 */
 	}
 	.module {
 		border: 1px dashed red;
