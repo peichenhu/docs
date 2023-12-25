@@ -1,6 +1,6 @@
 {
 	"name": "docs",
-	"version": "1.0.60",
+	"version": "1.0.61",
 	"description": "个人文档",
 	"scripts": {
 		"push": "sh bash/push.sh",
