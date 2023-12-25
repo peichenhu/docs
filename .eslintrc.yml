@@ -1,0 +1,6 @@
+root: true
+ignorePatterns:
+    - 'dist'
+    - 'node_modules'
+extends:
+    - '@pch1024/eslint-config'

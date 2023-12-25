@@ -30,7 +30,8 @@ const { vObserver, vList } = useVirtualList(dataList, scroll);
 		height: 500px;
 		overflow: hidden auto;
 		padding: 1em;
-		scroll-behavior: smooth;
+		scroll-behavior: auto; // 滚动框无过度立即滚动。
+		scroll-behavior: smooth; // 滚动框通过一个用户代理预定义的时长、使用预定义的时间函数，来实现平稳的滚动
 		// -webkit-overflow-scrolling: touch; /* 当手指从触摸屏上移开，会保持一段时间的滚动 */
 		-webkit-overflow-scrolling: auto; /* 当手指从触摸屏上移开，滚动会立即停止 */
 	}

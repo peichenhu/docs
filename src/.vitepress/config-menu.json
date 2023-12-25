@@ -344,6 +344,16 @@
         }
       ],
       "collapsed": true
+    },
+    {
+      "text": "DEMO",
+      "items": [
+        {
+          "text": "关键词高亮",
+          "link": "/60-demo/10-关键词高亮"
+        }
+      ],
+      "collapsed": true
     }
   ]
 }
